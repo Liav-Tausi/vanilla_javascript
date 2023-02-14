@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <title>activity_generator</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark" style="height: 600px;">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <a style="width: 50px;" href="https://www.boredapi.com/documentation" target="_blank" class="navbar-brand mx-2">
+          <img style="width: 40px; margin-left: 22px;"  src="https://cdn-icons-png.flaticon.com/512/260/260213.png">
+        </a>
+
+        <div class="collapse navbar-collapse rounded" style="margin-left: 32px;" id="navbarNav">
+          <ul class="nav nav-tabs bg-warning gap-1 rounded border border-1 border-dark">
+            <li class="nav-item active">
+              <a class="nav-link text-white active bg-dark rounded disabled"  href="#"><strong>activity generator</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark rounded" href="timer_local_storage/timer.html"><strong>timer</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark rounded" href="page3.html"><strong>Contribute</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark rounded" href="page4.html"><strong>About</strong></a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="text-white mx-4 my-0"><strong>The Ultimate Activity Generator</strong></p>
+    </nav>
+  </header>
+  <main>
+    <div class="conatiner row mx-auto my-2" style="height: 600px;">
+      <div class="container col row-col-4 border-end border-warning">
+        <p class="text-warning d-flex justify-content-center col px-0 mx-0 mb-5 pb-5"><strong>Config</strong></p>
+        <div class="container">
+          <div class="d-flex justify-content-center gap-2 mb-3">
+            <label class="text-warning" for="points1"><strong>Participants</strong></label>
+            <input type="range" alt="participants" min="1" max="10" step="1" onchange="range(event)">
+            <label class="text-warning" for="points2" id="numEndPoint"><strong>1</strong></label>
+          </div>
+
+          <div class="d-flex justify-content-center gap-5 my-5">
+            <select id="selectElement" name="activ" class="bg-warning rounded">
+              <option value="education">education</option>
+              <option value="recreational">recreational</option>
+              <option value="social">social</option>
+              <option value="diy">diy</option>
+              <option value="charity">charity</option>
+              <option value="cooking">cooking</option>
+              <option value="relaxation">relaxation</option>
+              <option value="music">music</option>
+              <option value="busywork">busywork</option>
+            </select>
+            <div>
+              <label class="text-warning" for="amount"><strong>Free</strong></label>
+              <input id="checkElement" type="checkbox" alt="is free">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button type="button" id="btn1"  class="btn btn-warning row-cols-2 rounded py-1" style="width: 15%;">
+            <img class="col-auto" src="https://cdn0.iconfinder.com/data/icons/working-drawn/32/bore-512.png" style="width: 40%;">
+            <p class="col-auto"><strong>click me if your bored</strong></p>
+          </button>
+        </div>
+      </div>
+
+      <div class="container col">
+        <p class="text-warning d-flex justify-content-center col px-0 mx-0 mb-5 pb-5"><strong>Activity</strong></p>
+        <div id="infoEndPoint" class="container my-5"></div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="activity_generator/scripts/index.js"></script>
+</html>0
