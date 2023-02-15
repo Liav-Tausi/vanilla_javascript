@@ -5,7 +5,6 @@ function startTimer(amount) {
   const initialTimeTimer = document.getElementById('timer');
   let time = initialTimeTimer.value;
   let stop = false;
-
   if (amount) {
     time = amount;
   };
