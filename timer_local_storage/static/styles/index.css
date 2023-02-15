@@ -155,7 +155,7 @@ body{
 
 }
 
-.closeBtn {
+.popBtn {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 14px;
@@ -167,33 +167,11 @@ body{
   cursor: pointer;
 }
 
-.closeBtn:hover {
+.popBtn:hover {
   transform: scale(0.98);
   background-color: rgb(34, 29, 64)
 }
 
-.closeBtn:active {
-  transform: scale(0.96);
-}
-
-.resumeBtn {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 14px;
-  padding-right: 14px;
-  border-width: 1px;
-  border-radius: 15%;
-  background-color: rgb(39, 33, 75);
-  color: white;
-  cursor: pointer;
-}
-
-.resumeBtn:hover {
-  transform: scale(0.98);
-  background-color: rgb(34, 29, 64)
-}
-
-
-.resumeBtn:active {
+.popBtn:active {
   transform: scale(0.96);
 }

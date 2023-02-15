@@ -55,11 +55,20 @@ window.onload = () => {
   };
 };
 
+
+
+const closeBtn = document.getElementById('closeBtn')
+.addEventListener('click', closePopup)
+
 function closePopup() {
   document.getElementById('popUpDiv').style.display = 'none';
   localStorage.removeItem('countDown_and_Date');
   return false;
 };
+
+
+const resumeBtn = document.getElementById('resumeBtn')
+.addEventListener('click', resume)
 
 function resume() {
   const countDownData = localStorage.getItem('countDown_and_Date');
